@@ -21,11 +21,12 @@ header{
 }
 
 
-ul{
+ul, h2{
     font-family: "Mulish", sans-serif;
     align-items: center; 
     margin-left: 10px;
 }
+
 .navlink{
     text-decoration: none;
     color:rgb(255, 255, 255);
@@ -118,8 +119,6 @@ background-color: rgb(215, 108, 151);
     /* transicion */
     opacity: 1;
     transition: 0.5 ease; 
-    
-
 }
 
 
@@ -186,4 +185,33 @@ background-color: rgb(215, 108, 151);
 
 .seccionsobremi {
     background-color: rgb(212, 168, 205);
+}
+
+
+
+
+.container_habilidades {
+    display:flex; 
+    justify-content: center;
+    
+}
+
+
+.fotoraw {
+
+        height: 600px;
+        width: 300px;
+        margin-right: 200 ;
+}
+
+
+.fotomementoweb {
+
+    height: 600px;
+    width: 300px;
+    margin-left: 200px
+}
+
+.secciontrabajosrealizados {
+    background-color: white;
 }
