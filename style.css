@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body { 
+    background-color: rgb(255, 255, 255);
+    margin:0;
+
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    min-height: 155px;
+    background-color: rgb(169, 136, 150);
+    padding: 10px;
+    font-family: "Mulish", sans-serif;
+    align-items: center;
+   
+
+}
+
+
+ul{
+    font-family: "Mulish", sans-serif;
+    align-items: center; 
+    margin-left: 10px;
+}
+.navlink{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+nav a{ font-weight: 600;
+        padding: 10px; 
+        
+}
+
+nav a:hover{
+background-color: rgb(215, 108, 151);
+}
+
+/* Intenté hacerlo responsive el header pero no salió como quería... */
+@media (max-widht:700px){
+    header{ 
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px, 0px;
+    }
+}
+
+
+.mifoto{ display: flex; 
+    align-items: center;
+    
+}
+
+.mifoto img{
+    height: 150px;
+    border-radius: 80px;
+    margin-right: 15px; 
+
+}
+
+
+.myname{ 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: weight;
+    font-size: 35px;
+    margin-left: 10px;
+    color:white;
+
+}
+
+.container_fotos {
+    display:flex; 
+    justify-content: center;
+    /* animaciones */ 
+    animation-name: fade-up;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade-up{
+    0% { 
+        opacity: 0;
+        transform: trasnlateY(30px) scale (0.9);
+}
+
+100% { 
+    opacity:1;
+    transform: trasnlateY(0px) scale (1);
+}
+}
+
+
+.fototrabajo {
+    height: 100px;
+    width: 200px;
+    margin-left: 100px ;
+    /* transicion */
+    opacity: 1;
+    transition: 0.5 ease; 
+    
+}
+
+
+.memento {
+    margin-left: 80px;
+}
+.fototrabajo2 {
+    height: 100px;
+    width: 300px;
+    margin-left: 120px;
+    /* transicion */
+    opacity: 1;
+    transition: 0.5 ease; 
+    
+
+}
+
+
+.fototrabajo:hover  {
+    opacity: 0.5;
+}
+
+.fototrabajo2:hover  {
+    opacity: 0.5;
+}
+
+.pie {
+    font-family: "Mulish", sans-serif;
+    align-items: center; 
+    margin-left: 10px;
+    
+}
+
+ h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+   text-align: center;
+   padding-top: 20px;
+    justify-content: space-between;
+
+}
+
+
+.fotocompu{
+
+   width: 300px; 
+    height:300px; 
+    margin-right: 200px;
+    
+}
+
+
+.container_sobremi p {
+    margin-right: 200px;
+    margin-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+   text-align: center;
+   padding: 20px; 
+    /* From https://css.glass */
+    background: rgba(27, 38, 20, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.6px);
+    -webkit-backdrop-filter: blur(16.6px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.container_sobremi {
+    display: flex; 
+}
+
+.seccionsobremi {
+    background-color: rgb(212, 168, 205);
+}
