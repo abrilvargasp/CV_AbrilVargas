@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* css de la página inicio.html */ 
 
 body { 
     background-color: rgb(255, 255, 255);
@@ -17,11 +18,11 @@ header{
     font-family: "Mulish", sans-serif;
     align-items: center;
    
-
+ 
 }
 
 
-ul, h2{
+ul, ol {
     font-family: "Mulish", sans-serif;
     align-items: center; 
     margin-left: 10px;
@@ -74,6 +75,7 @@ background-color: rgb(215, 108, 151);
     font-size: 35px;
     margin-left: 10px;
     color:white;
+   
 
 }
 
@@ -149,6 +151,11 @@ background-color: rgb(215, 108, 151);
 
 }
 
+h3:hover 
+{
+    font-size: 2rem;
+}
+
 
 .fotocompu{
 
@@ -175,9 +182,25 @@ background-color: rgb(215, 108, 151);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(16.6px);
     -webkit-backdrop-filter: blur(16.6px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);   
+     /* animaciones */ 
+    animation-name: fade-up2;
+    animation-duration: 4s;
+}
+
+@keyframes fade-up2{
+    0% { 
+        opacity: 0;
+        transform: trasnlateY(90px) scale (0.9);
+}
+
+100% { 
+    opacity:1;
+    transform: trasnlateY(0px) scale (3);
+}
 
 }
+
 
 .container_sobremi {
     display: flex; 
@@ -210,8 +233,107 @@ background-color: rgb(215, 108, 151);
     height: 600px;
     width: 300px;
     margin-left: 200px
+    
 }
+
 
 .secciontrabajosrealizados {
     background-color: white;
+}
+
+
+/* CSS de la página contacto de aquí para abajo */ 
+
+.listcontact {
+    font-size:20px;
+    margin-left: 200px;
+    padding-bottom: 40px;
+}
+
+.mailto {
+    text-decoration: none;
+    color: rgb(169, 136, 150);
+}
+
+.containercontact {
+    display: flex;
+    justify-content:space-between;
+    padding-top: 40px;
+    
+    
+    
+}
+
+
+
+.imagencontacto {
+    margin-right: 200px;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 100px;
+    
+    
+  
+}
+
+
+.form {
+    width: 400px;
+    background-color:rgb(169, 136, 150) ;
+    padding: 30px; 
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "Mulish", sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+}
+.controls {
+   width: 90%;
+   background-color:white ;
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 15px;
+   border: 1px solid;
+   font-size: 18px;
+   font-family: "Mulish", sans-serif;
+}
+.form p {
+    height: 30px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.form a {
+    color: white;
+    
+}
+.form .botonform {
+    width: 90%;
+    background-color:rgb(215, 108, 151);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family:"Mulish", sans-serif;
+}
+
+.botonform:hover {
+
+    color:rgb(122, 74, 101);
+    font-size: 1.5rem;
+}
+.fondito {
+    background-color:rgb(181, 144, 158) ;
+    padding-bottom: 30px;
 }
