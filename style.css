@@ -272,10 +272,10 @@ h3:hover
     height: 300px;
     padding-bottom: 100px;
     
-    
   
 }
 
+/* FORMULARIO */ 
 
 .form {
     width: 400px;
@@ -308,7 +308,7 @@ h3:hover
 .form p {
     height: 30px;
     text-align: center;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 40px;
 }
 
@@ -337,3 +337,57 @@ h3:hover
     background-color:rgb(181, 144, 158) ;
     padding-bottom: 30px;
 }
+
+/* Estilo al pie de pagina */
+
+.piedepagina {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(212, 168, 205);
+   
+
+}
+
+
+/* No me queda muy claro el tema de la espcificidad, hay veces que siento que lo usé bien, pero otras que no, 
+por ejemplo: cuando hay un div dentro de otro div como este caso. (me ayude con un tutorial, vi que ponia todas las class asi y me parecio mas limpio jeje) */
+
+ .grupo1 .box .redsocial {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grupo1 .box h2 {
+    font-family: "Mulish", sans-serif; 
+    font-size: 17px;
+}
+
+
+.grupo1 .box .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    color: black;
+    margin-right: 10px;
+    transition: all 300ms ease;
+
+}
+
+.grupo1 .box .redsocial a:hover {
+    color:white
+}
+
+
+.grupo2 small{
+    margin-bottom: 15px;
+    font-family: "Mulish", sans-serif;
+}
+
+
+/* Tuve un lio inmenso con el footer de la pagina de contacto.html, no se porque no me quería coger el class inicial... 
+tuve que hacer un class distinto y tampoco lo quiso reconocer... esto ¿es normal?  en el header copie y pegue tal cual los estilos y el html y no me paso esto*/
