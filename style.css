@@ -334,42 +334,29 @@ h3:hover
     font-size: 1.5rem;
 }
 .fondito {
-    background-color:rgb(181, 144, 158) ;
     padding-bottom: 30px;
 }
 
 /* Estilo al pie de pagina */
 
-.piedepagina {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(212, 168, 205);
-   
-
-}
-
-
-/* No me queda muy claro el tema de la espcificidad, hay veces que siento que lo usé bien, pero otras que no, 
-por ejemplo: cuando hay un div dentro de otro div como este caso. (me ayude con un tutorial, vi que ponia todas las class asi y me parecio mas limpio jeje) */
-
- .grupo1 .box .redsocial {
+footer {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.grupo1 .box h2 {
     font-family: "Mulish", sans-serif; 
     font-size: 17px;
+    text-align: center;
+    background-color: rgb(212, 168, 205);
+
 }
 
-
-.grupo1 .box .redsocial a {
+.piedepagina {
     display: inline-block;
-    text-decoration: none;
+}
+
+.redsocial a {
     width: 55px;
     height: 55px;
     color: black;
@@ -389,5 +376,8 @@ por ejemplo: cuando hay un div dentro de otro div como este caso. (me ayude con 
 }
 
 
-/* Tuve un lio inmenso con el footer de la pagina de contacto.html, no se porque no me quería coger el class inicial... 
-tuve que hacer un class distinto y tampoco lo quiso reconocer... esto ¿es normal?  en el header copie y pegue tal cual los estilos y el html y no me paso esto*/
+
+
+/* No me queda muy claro el tema de la espcificidad, hay veces que siento que lo usé bien, pero otras que no, 
+por ejemplo: cuando hay un div dentro de otro div como este caso. (me ayude con un tutorial, vi que ponia todas las class asi y me parecio mas limpio jeje) */
+
